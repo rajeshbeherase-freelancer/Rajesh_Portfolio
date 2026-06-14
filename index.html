@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh Kumar Behera | Portfolio</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --text: #334155;
+            --light-bg: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            margin: 0 0 20px 0;
+            color: #93c5fd;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .contact-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 0.95rem;
+            border-bottom: 1px dashed #93c5fd;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            color: var(--primary);
+            margin: 20px 0 5px 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-card {
+            background: var(--light-bg);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .skill-card h4 {
+            margin: 0 0 10px 0;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+
+        .skill-card ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .skill-card li {
+            margin-bottom: 6px;
+        }
+
+        .project-meta {
+            font-weight: bold;
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .cta-box {
+            background-color: var(--light-bg);
+            border-left: 4px solid var(--accent);
+            padding: 25px;
+            margin-top: 40px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .cta-box h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RAJESH KUMAR BEHERA</h1>
+        <p>Freelance Software Engineer & QA Automation Specialist</p>
+        <div class="contact-links">
+            <a href="mailto:rajeshbehera.se@gmail.com">rajeshbehera.se@gmail.com</a>
+            <a href="tel:+917067352860">+91-7067352860</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p>
+                Results-driven Senior Software Engineer with deep expertise in Software Development and Quality Engineering, specializing in Desktop Application Development, Test Automation, and Enterprise Workforce Monitoring Solutions. Hands-on experience developing and enhancing high-performance Activity Tracking Desktop Agents for Windows and Linux platforms using C++, including low-level system monitoring, process tracking, performance optimization, and memory tuning. 
+            </p>
+            <p>
+                Complemented by a profound mastery in architecting scalable automation frameworks from scratch using Java, Selenium WebDriver, TestNG, Cucumber BDD, JavaScript, and WebDriverIO. Proven capability to manage the entire testing lifecycle (STLC) across APIs, databases, mobile operating environments, and high-load backend configurations.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Core Skills & Expert Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Desktop System Engineering</h4>
+                    <ul>
+                        <li>C++ & Object-Oriented Design (OOP)</li>
+                        <li>Windows & Linux System Programming</li>
+                        <li>Process Monitoring & Multithreading</li>
+                        <li>Memory Tuning & Resource Optimization</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>Test Automation Frameworks</h4>
+                    <ul>
+                        <li>Java (Selenium, TestNG, Cucumber BDD)</li>
+                        <li>JavaScript (WebDriverIO)</li>
+                        <li>Page Object Model (POM) Design Patterns</li>
+                        <li>Data-Driven & Hybrid Framework Builds</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>API, DB & Performance QA</h4>
+                    <ul>
+                        <li>REST API Validation via Postman</li>
+                        <li>SQL Backend Testing & Integrity Checks</li>
+                        <li>Apache JMeter Performance Execution</li>
+                        <li>Mobile Automation (Appium Android)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>DevOps & Cloud Orchestration</h4>
+                    <ul>
+                        <li>Jenkins Continuous Integration Pipelines</li>
+                        <li>Git & Advanced GitHub Versioning workflows</li>
+                        <li>JIRA Defect Tracking & Bug Management</li>
+                        <li>Agile / Scrum Sprint Delivery Matrix</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div>
+                <h3>Senior Software Engineer</h3>
+                <p><em>Enterprise Web Platforms & Quality Infrastructure</em></p>
+                <ul>
+                    <li>Designed and executed comprehensive test strategies, validation matrices, and dynamic edge-case scenarios across enterprise-grade cloud applications.</li>
+                    <li>Assembled, deployed, and continuously scaled core functional regression automation suites inside Jenkins pipelines, implementing rigorous test quality gates.</li>
+                    <li>Utilized Postman to test, automate, and isolate structural flaws inside REST APIs across heavy CRUD operations, status verifications, and payload runtime checks.</li>
+                    <li>Spearheaded systematic root cause analysis loops alongside Product Owners and Developers to dramatically suppress product lifecycle deployment defects.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Client Case Study</h2>
+            <h3>Employee Monitoring and Time Tracking (SaaS Platform)</h3>
+            <div class="project-meta">Technologies Used: C++, Node.js, Java, Selenium WebDriver, TestNG, Cucumber, WebDriverIO, Jenkins, Postman, SQL, JIRA</div>
+            <ul>
+                <li><strong>Cross-Platform Development:</strong> Programmed, enhanced, and debugged high-sensitivity system activity logging desktop software components natively targeting Windows and Linux runtime models.</li>
+                <li><strong>Resource Architecture:</strong> Solved heavy system synchronization processing bottlenecks to sharply drop CPU footprint metrics and thread latency on running client workstations.</li>
+                <li><strong>Full Lifecycle Engineering:</strong> Drove technical code inspections, maintained source control trees via systematic Git strategies, and built underlying functional validation loops checking software reliability end-to-end.</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Technology (B.Tech) in Mechanical Engineering</strong><br>
+            Biju Patnaik University of Technology (BPUT) | Year of Completion: 2021</p>
+        </section>
+
+        <div class="cta-box">
+            <h3>Need Help Launching or Testing Your Next Product?</h3>
+            <p>I am currently accepting remote freelance software development, framework architectural updates, and test automation system setup contracts.</p>
+            <p><strong>Let's connect:</strong> Reach out directly at <a href="mailto:rajeshbehera.se@gmail.com"><strong>rajeshbehera.se@gmail.com</strong></a> to coordinate an architecture deep-dive.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
