@@ -1,41 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-15T03:20:52 IST" name="Chandan_Zinnu" finished-at="2026-04-15T03:21:31 IST" duration-ms="39402">
+  <suite started-at="2026-04-27T00:22:05 IST" name="Default suite" finished-at="2026-04-27T00:22:18 IST" duration-ms="13229">
     <groups>
     </groups>
-    <test started-at="2026-04-15T03:20:52 IST" name="Test" finished-at="2026-04-15T03:21:31 IST" duration-ms="39402">
-      <class name="Tests.Login_Action_Verify_Valid_Invalid">
-        <test-method is-config="true" signature="Before_Suite()[pri:0, instance:Tests.Login_Action_Verify_Valid_Invalid@79e4c792]" started-at="2026-04-15T03:20:52 IST" name="Before_Suite" finished-at="2026-04-15T03:20:52 IST" duration-ms="11" status="PASS">
+    <test started-at="2026-04-27T00:22:05 IST" name="Default test" finished-at="2026-04-27T00:22:18 IST" duration-ms="13229">
+      <class name="Java_Programms_Practice.Upload_popup">
+        <test-method signature="M1()[pri:0, instance:Java_Programms_Practice.Upload_popup@55a147cc]" started-at="2026-04-27T00:22:05 IST" name="M1" finished-at="2026-04-27T00:22:18 IST" duration-ms="13182" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Before_Suite -->
-        <test-method is-config="true" signature="Before_Method()[pri:0, instance:Tests.Login_Action_Verify_Valid_Invalid@79e4c792]" started-at="2026-04-15T03:20:52 IST" name="Before_Method" finished-at="2026-04-15T03:20:56 IST" duration-ms="4350" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Before_Method -->
-        <test-method signature="Login_Action_Verify_Invalid_Test()[pri:0, instance:Tests.Login_Action_Verify_Valid_Invalid@79e4c792]" started-at="2026-04-15T03:20:56 IST" name="Login_Action_Verify_Invalid_Test" finished-at="2026-04-15T03:21:08 IST" duration-ms="11578" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_Action_Verify_Invalid_Test -->
-        <test-method is-config="true" signature="After_Method()[pri:0, instance:Tests.Login_Action_Verify_Valid_Invalid@79e4c792]" started-at="2026-04-15T03:21:08 IST" name="After_Method" finished-at="2026-04-15T03:21:08 IST" duration-ms="322" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After_Method -->
-        <test-method is-config="true" signature="Before_Method()[pri:0, instance:Tests.Login_Action_Verify_Valid_Invalid@79e4c792]" started-at="2026-04-15T03:21:08 IST" name="Before_Method" finished-at="2026-04-15T03:21:12 IST" duration-ms="4389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Before_Method -->
-        <test-method signature="Login_Action_Verify_Valid_Test()[pri:0, instance:Tests.Login_Action_Verify_Valid_Invalid@79e4c792]" started-at="2026-04-15T03:21:12 IST" name="Login_Action_Verify_Valid_Test" finished-at="2026-04-15T03:21:31 IST" duration-ms="18461" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_Action_Verify_Valid_Test -->
-        <test-method is-config="true" signature="After_Method()[pri:0, instance:Tests.Login_Action_Verify_Valid_Invalid@79e4c792]" started-at="2026-04-15T03:21:31 IST" name="After_Method" finished-at="2026-04-15T03:21:31 IST" duration-ms="264" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After_Method -->
-      </class> <!-- Tests.Login_Action_Verify_Valid_Invalid -->
-    </test> <!-- Test -->
-  </suite> <!-- Chandan_Zinnu -->
+        </test-method> <!-- M1 -->
+      </class> <!-- Java_Programms_Practice.Upload_popup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
