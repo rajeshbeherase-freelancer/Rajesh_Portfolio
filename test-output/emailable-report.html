@@ -8,11 +8,74 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13,229</td><td></td><td></td></tr>
+<tr><th colspan="8">EmpMonitor Automation Suite</th></tr>
+<tr><td><a href="#t0">EmpMonitor Regression</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">74,157</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Java_Programms_Practice.Upload_popup</td><td><a href="#m0">M1</a></td><td rowspan="1">1777229525406</td><td rowspan="1">13182</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">EmpMonitor Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">EmpMonitor Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.AlertPoliciesTest</td><td><a href="#m0">deleteAlertPolicyTest</a></td><td rowspan="1">1782592800851</td><td rowspan="1">24894</td></tr><tr class="failedodd"><td rowspan="1">Tests.AutoMailDeleteTest</td><td><a href="#m1">autoMailDeleteTest</a></td><td rowspan="1">1782592829671</td><td rowspan="1">16748</td></tr><tr><th colspan="4">EmpMonitor Regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests.EmployeeRegistrationTest</td><td><a href="#m2">registerEmployeeTest</a></td><td rowspan="1">1782592850345</td><td rowspan="1">6693</td></tr><tr class="passedodd"><td rowspan="2">Tests.LoginTest</td><td><a href="#m3">loginTest</a></td><td rowspan="2">1782592796723</td><td rowspan="2">538</td></tr><tr class="passedodd"><td><a href="#m4">loginTest</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Java_Programms_Practice.Upload_popup#M1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>EmpMonitor Regression</h2><h3 id="m0">Tests.AlertPoliciesTest#deleteAlertPolicyTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //table//a[contains(@title,&apos;Delete&apos;) or contains(@class,&apos;delete&apos;)] | //table//i[contains(@class,&apos;delete&apos;) or contains(@title,&apos;Delete&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at PageClasses.AlertPoliciesPage.deleteAlertPolicy(AlertPoliciesPage.java:46)
+	at Tests.AlertPoliciesTest.deleteAlertPolicyTest(AlertPoliciesTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table//a[contains(@title,&apos;Delete&apos;) or contains(@class,&apos;delete&apos;)] | //table//i[contains(@class,&apos;delete&apos;) or contains(@title,&apos;Delete&apos;)]&quot;}
+  (Session info: chrome=149.0.7827.197)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a673318a5cbcab9bb6eeae4f3b601526, findElement {using=xpath, value=//table//a[contains(@title,&apos;Delete&apos;) or contains(@class,&apos;delete&apos;)] | //table//i[contains(@class,&apos;delete&apos;) or contains(@title,&apos;Delete&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\chand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52971}, goog:processID: 25068, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52971/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a673318a5cbcab9bb6eeae4f3b601526
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.AutoMailDeleteTest#autoMailDeleteTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=149.0.7827.197)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [faeab66bfebebb23173f39034fc53bcb, clickElement {id=f.DF57521881ED481AF9F670F6D8ED0129.d.4828A8D326BCFED870F7CF81FC46DE3F.e.169}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\chand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52731}, goog:processID: 20676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52731/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (faeab66bfebebb23173f39034fc53bcb)] -&gt; xpath: //*[normalize-space(text())=&apos;Auto Email Reports&apos;]]
+Session ID: faeab66bfebebb23173f39034fc53bcb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at PageClasses.AutoMailPage.clickAutoEmailReports(AutoMailPage.java:46)
+	at Tests.AutoMailDeleteTest.autoMailDeleteTest(AutoMailDeleteTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.EmployeeRegistrationTest#registerEmployeeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Run=Y, FirstName=Chandan, LastName=Raut, Email=chandanrautttttw@gmail.com, Password=chandanrautttttw@gmail.com1, CountryCode=91, Mobile=7978239283, EmployeeCode=0123, Location=Bhilai, Role=Employee, Department=Software Testing, TimeZone=, Shift=}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Run=Y, Scenario=InvalidLogin, Username=Chandan, Password=Chandan1234, ExpectedResult=Error}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Run=Y, Scenario=ValidLogin, Username=Nokiaa, Password=VMot%$740, ExpectedResult=Dashboard}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

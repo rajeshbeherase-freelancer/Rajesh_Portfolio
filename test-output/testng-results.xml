@@ -1,17 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-27T00:22:05 IST" name="Default suite" finished-at="2026-04-27T00:22:18 IST" duration-ms="13229">
+  <suite started-at="2026-06-28T02:09:43 IST" name="EmpMonitor Automation Suite" finished-at="2026-06-28T02:10:57 IST" duration-ms="74157">
     <groups>
     </groups>
-    <test started-at="2026-04-27T00:22:05 IST" name="Default test" finished-at="2026-04-27T00:22:18 IST" duration-ms="13229">
-      <class name="Java_Programms_Practice.Upload_popup">
-        <test-method signature="M1()[pri:0, instance:Java_Programms_Practice.Upload_popup@55a147cc]" started-at="2026-04-27T00:22:05 IST" name="M1" finished-at="2026-04-27T00:22:18 IST" duration-ms="13182" status="PASS">
+    <test started-at="2026-06-28T02:09:43 IST" name="EmpMonitor Regression" finished-at="2026-06-28T02:10:57 IST" duration-ms="74157">
+      <class name="Tests.AutoMailDeleteTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.AutoMailDeleteTest@2034b64c]" started-at="2026-06-28T02:10:26 IST" name="setUp" finished-at="2026-06-28T02:10:29 IST" duration-ms="3646" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- M1 -->
-      </class> <!-- Java_Programms_Practice.Upload_popup -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setUp -->
+        <test-method signature="autoMailDeleteTest()[pri:0, instance:Tests.AutoMailDeleteTest@2034b64c]" started-at="2026-06-28T02:10:29 IST" name="autoMailDeleteTest" finished-at="2026-06-28T02:10:46 IST" duration-ms="16748" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=149.0.7827.197)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [faeab66bfebebb23173f39034fc53bcb, clickElement {id=f.DF57521881ED481AF9F670F6D8ED0129.d.4828A8D326BCFED870F7CF81FC46DE3F.e.169}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\chand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52731}, goog:processID: 20676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52731/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (faeab66bfebebb23173f39034fc53bcb)] -> xpath: //*[normalize-space(text())='Auto Email Reports']]
+Session ID: faeab66bfebebb23173f39034fc53bcb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=149.0.7827.197)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [faeab66bfebebb23173f39034fc53bcb, clickElement {id=f.DF57521881ED481AF9F670F6D8ED0129.d.4828A8D326BCFED870F7CF81FC46DE3F.e.169}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\chand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52731}, goog:processID: 20676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52731/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (faeab66bfebebb23173f39034fc53bcb)] -> xpath: //*[normalize-space(text())='Auto Email Reports']]
+Session ID: faeab66bfebebb23173f39034fc53bcb
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at PageClasses.AutoMailPage.clickAutoEmailReports(AutoMailPage.java:46)
+at Tests.AutoMailDeleteTest.autoMailDeleteTest(AutoMailDeleteTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- autoMailDeleteTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.AutoMailDeleteTest@2034b64c]" started-at="2026-06-28T02:10:46 IST" name="tearDown" finished-at="2026-06-28T02:10:46 IST" duration-ms="280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=autoMailDeleteTest status=FAILURE method=AutoMailDeleteTest.autoMailDeleteTest()[pri:0, instance:Tests.AutoMailDeleteTest@2034b64c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.AutoMailDeleteTest -->
+      <class name="Tests.EmployeeRegistrationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.EmployeeRegistrationTest@75d3a5e0]" started-at="2026-06-28T02:10:46 IST" name="setUp" finished-at="2026-06-28T02:10:50 IST" duration-ms="3614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerEmployeeTest(java.util.Map)[pri:0, instance:Tests.EmployeeRegistrationTest@75d3a5e0]" started-at="2026-06-28T02:10:50 IST" name="registerEmployeeTest" data-provider="employeeData" finished-at="2026-06-28T02:10:57 IST" duration-ms="6693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Run=Y, FirstName=Chandan, LastName=Raut, Email=chandanrautttttw@gmail.com, Password=chandanrautttttw@gmail.com1, CountryCode=91, Mobile=7978239283, EmployeeCode=0123, Location=Bhilai, Role=Employee, Department=Software Testing, TimeZone=, Shift=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerEmployeeTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.EmployeeRegistrationTest@75d3a5e0]" started-at="2026-06-28T02:10:57 IST" name="tearDown" finished-at="2026-06-28T02:10:57 IST" duration-ms="178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registerEmployeeTest status=SUCCESS method=EmployeeRegistrationTest.registerEmployeeTest(java.util.Map)[pri:0, instance:Tests.EmployeeRegistrationTest@75d3a5e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.EmployeeRegistrationTest -->
+      <class name="Tests.AlertPoliciesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.AlertPoliciesTest@58cbafc2]" started-at="2026-06-28T02:09:57 IST" name="setUp" finished-at="2026-06-28T02:10:00 IST" duration-ms="3443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteAlertPolicyTest()[pri:0, instance:Tests.AlertPoliciesTest@58cbafc2]" started-at="2026-06-28T02:10:00 IST" name="deleteAlertPolicyTest" finished-at="2026-06-28T02:10:25 IST" duration-ms="24894" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //table//a[contains(@title,'Delete') or contains(@class,'delete')] | //table//i[contains(@class,'delete') or contains(@title,'Delete')]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //table//a[contains(@title,'Delete') or contains(@class,'delete')] | //table//i[contains(@class,'delete') or contains(@title,'Delete')]' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at PageClasses.AlertPoliciesPage.deleteAlertPolicy(AlertPoliciesPage.java:46)
+at Tests.AlertPoliciesTest.deleteAlertPolicyTest(AlertPoliciesTest.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table//a[contains(@title,'Delete') or contains(@class,'delete')] | //table//i[contains(@class,'delete') or contains(@title,'Delete')]"}
+  (Session info: chrome=149.0.7827.197)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a673318a5cbcab9bb6eeae4f3b601526, findElement {using=xpath, value=//table//a[contains(@title,'Delete') or contains(@class,'delete')] | //table//i[contains(@class,'delete') or contains(@title,'Delete')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\chand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52971}, goog:processID: 25068, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52971/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a673318a5cbcab9bb6eeae4f3b601526
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAlertPolicyTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.AlertPoliciesTest@58cbafc2]" started-at="2026-06-28T02:10:25 IST" name="tearDown" finished-at="2026-06-28T02:10:26 IST" duration-ms="276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteAlertPolicyTest status=FAILURE method=AlertPoliciesTest.deleteAlertPolicyTest()[pri:0, instance:Tests.AlertPoliciesTest@58cbafc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.AlertPoliciesTest -->
+      <class name="Tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginTest@6574a52c]" started-at="2026-06-28T02:09:43 IST" name="setUp" finished-at="2026-06-28T02:09:48 IST" duration-ms="4509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.util.Map)[pri:0, instance:Tests.LoginTest@6574a52c]" started-at="2026-06-28T02:09:48 IST" name="loginTest" data-provider="loginData" finished-at="2026-06-28T02:09:53 IST" duration-ms="4810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Run=Y, Scenario=ValidLogin, Username=Nokiaa, Password=VMot%$740, ExpectedResult=Dashboard}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@6574a52c]" started-at="2026-06-28T02:09:53 IST" name="tearDown" finished-at="2026-06-28T02:09:53 IST" duration-ms="163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.util.Map)[pri:0, instance:Tests.LoginTest@6574a52c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginTest@6574a52c]" started-at="2026-06-28T02:09:53 IST" name="setUp" finished-at="2026-06-28T02:09:56 IST" duration-ms="3449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.util.Map)[pri:0, instance:Tests.LoginTest@6574a52c]" started-at="2026-06-28T02:09:56 IST" name="loginTest" data-provider="loginData" finished-at="2026-06-28T02:09:57 IST" duration-ms="538" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Run=Y, Scenario=InvalidLogin, Username=Chandan, Password=Chandan1234, ExpectedResult=Error}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@6574a52c]" started-at="2026-06-28T02:09:57 IST" name="tearDown" finished-at="2026-06-28T02:09:57 IST" duration-ms="143" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.util.Map)[pri:0, instance:Tests.LoginTest@6574a52c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.LoginTest -->
+    </test> <!-- EmpMonitor Regression -->
+  </suite> <!-- EmpMonitor Automation Suite -->
 </testng-results>

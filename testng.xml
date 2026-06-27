@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Chandan_Zinnu">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="Tests.Login_Action_Verify_Valid_Invalid"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<suite name="EmpMonitor Automation Suite">
+    <test thread-count="5" name="EmpMonitor Regression">
+        <classes>
+            <class name="Tests.LoginTest"/>
+            <class name="Tests.AlertPoliciesTest"/>
+            <class name="Tests.AutoMailDeleteTest"/>
+            <class name="Tests.EmployeeRegistrationTest"/>
+        </classes>
+    </test>
+</suite>
