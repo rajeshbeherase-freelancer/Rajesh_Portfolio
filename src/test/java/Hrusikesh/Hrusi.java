@@ -202,7 +202,6 @@ public class Hrusi {
         double pageLoad =
                 seleniumLoadTime;
 
-
         /*
          * ==========================================
          * FIRST CONTENTFUL PAINT
