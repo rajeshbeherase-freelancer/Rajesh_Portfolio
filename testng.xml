@@ -3,7 +3,7 @@
 <suite name="Chandan_Zinnu">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Tests.Login_Action_Verify_Valid_Invalid"/>
+      <class name="Hrusikesh.Hrusi"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
