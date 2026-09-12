@@ -3,4 +3,5 @@
 /.settings/
 /.classpath
 /.project
+/test-output/
 *.log
