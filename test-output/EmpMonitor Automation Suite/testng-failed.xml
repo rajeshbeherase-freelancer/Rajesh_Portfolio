@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EmpMonitor Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="EmpMonitor Regression(failed)">
+    <classes>
+      <class name="Tests.EmployeeRegistrationTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="registerEmployeeTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.EmployeeRegistrationTest -->
+      <class name="Tests.AutoMailDeleteTest">
+        <methods>
+          <include name="autoMailDeleteTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.AutoMailDeleteTest -->
+      <class name="Tests.AlertPoliciesTest">
+        <methods>
+          <include name="deleteAlertPolicyTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.AlertPoliciesTest -->
+      <class name="Tests.LoginTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.LoginTest -->
+    </classes>
+  </test> <!-- EmpMonitor Regression(failed) -->
+</suite> <!-- Failed suite [EmpMonitor Automation Suite] -->

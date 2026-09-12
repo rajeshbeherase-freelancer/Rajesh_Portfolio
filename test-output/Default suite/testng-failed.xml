@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.Login_Action_Verify_Valid_Invalid">
+      <class name="Baseclasses.Shreekant">
         <methods>
-          <include name="After_Method"/>
-          <include name="Before_Method"/>
-          <include name="Login_Action_Verify_Valid_Test"/>
-          <include name="Before_Suite"/>
-          <include name="Login_Action_Verify_Invalid_Test"/>
+          <include name="M1"/>
         </methods>
-      </class> <!-- Tests.Login_Action_Verify_Valid_Invalid -->
+      </class> <!-- Baseclasses.Shreekant -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

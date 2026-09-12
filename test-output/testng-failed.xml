@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [EmpMonitor Automation Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="EmpMonitor Regression(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.AutoMailDeleteTest">
+      <class name="Baseclasses.Shreekant">
         <methods>
-          <include name="autoMailDeleteTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="M1"/>
         </methods>
-      </class> <!-- Tests.AutoMailDeleteTest -->
-      <class name="Tests.AlertPoliciesTest">
-        <methods>
-          <include name="deleteAlertPolicyTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Tests.AlertPoliciesTest -->
+      </class> <!-- Baseclasses.Shreekant -->
     </classes>
-  </test> <!-- EmpMonitor Regression(failed) -->
-</suite> <!-- Failed suite [EmpMonitor Automation Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
